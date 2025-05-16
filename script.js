@@ -1,3 +1,3 @@
-message() {
+function message() {
   alert("hoi")
 }
