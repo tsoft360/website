@@ -7,7 +7,7 @@ body {
   padding: 0;
 }
 
-/* Container voor inhoud */
+/* Container */
 .container {
   max-width: 900px;
   margin: 30px auto;
@@ -25,6 +25,30 @@ h1, h2, h3 {
   padding-bottom: 5px;
 }
 
+/* Ondertitel */
+.subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #555;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+/* Kleine tekst */
+.small {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* Afbeelding */
+header img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 20px auto;
+  border-radius: 8px;
+}
+
 /* Paragrafen en lijsten */
 p {
   line-height: 1.6;
@@ -40,31 +64,24 @@ li {
   margin-bottom: 8px;
 }
 
-/* Navigatie (optioneel) */
-nav ul {
-  list-style: none;
-  padding: 0;
-  background-color: #005bbb;
-  display: flex;
-  justify-content: center;
-  border-radius: 0 0 10px 10px;
-  margin: 0;
+/* Standpuntenlijst */
+.standpunten {
+  list-style-type: disc;
+  padding-left: 30px;
+  font-size: 1rem;
 }
 
-nav ul li {
-  margin: 0 15px;
+/* Opmerking onderaan lijst */
+.opmerking {
+  font-style: italic;
+  font-size: 0.95rem;
+  color: #666;
 }
 
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  display: block;
-  padding: 15px 10px;
-}
-
-nav ul li a:hover {
-  background-color: #004a99;
+/* Stemsectie */
+.stem {
+  text-align: center;
+  margin-top: 40px;
 }
 
 /* Knoppen */
@@ -84,6 +101,13 @@ button:hover {
   background-color: #005fa3;
 }
 
+/* Als knop disabled is */
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  color: #555;
+}
+
 /* Footer (optioneel) */
 footer {
   text-align: center;
@@ -94,18 +118,10 @@ footer {
   border-top: 1px solid #ccc;
 }
 
-/* Responsief design */
+/* Mobiele weergave */
 @media (max-width: 600px) {
   .container {
     padding: 15px;
-  }
-
-  nav ul {
-    flex-direction: column;
-  }
-
-  nav ul li {
-    margin: 5px 0;
   }
 
   button {
