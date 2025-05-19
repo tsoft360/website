@@ -1,38 +1,39 @@
-body {
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-}
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
 
-h1 {
-  font-size: 6rem;
-  color: #333;
-}
+    h1 {
+      font-size: 6rem;
+      color: #333;
+      margin-bottom: auto;
+    }
 
-button {
-  background-color: #0077cc;
-  color: white;
-  border: none;
-  padding: 12px 25px;
-  font-size: 1rem;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin-top: 15px;
-}
+    .button-container {
+      margin-top: auto;
+      padding: 30px;
+    }
 
-button:hover {
-  background-color: #005fa3;
-}
+    button {
+      background-color: #0077cc;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
 
-/* Als knop disabled is */
-button:disabled {
-  background-color: #ccc;
-  cursor: not-allowed;
-  color: #555;
-}
+    button:hover {
+      background-color: #005fa3;
+    }
+  </style>
